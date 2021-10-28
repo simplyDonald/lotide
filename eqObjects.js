@@ -15,10 +15,10 @@ const eqObjects = function(object1, object2) {
   if (keysObj1.length !== keysObj2.length) {
     return false;
   }
-  for (let i = 0; i < keysObj1.length; i++) {
-    if (keysObj1[i] !== keysObj2[i]) {
+  for (let obj of keysObj2) {
+    if(keysObj1.indexOf(obj) === -1){
       return false;
-    } 
+    }
   }
   return true;
 };
