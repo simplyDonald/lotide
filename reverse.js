@@ -1,4 +1,4 @@
-const numberCast = function(array) {
+const reverse = function(array) {
   let newargs = array.slice(2);
   // const newArray = [];
   const newWords = newargs.map((elem)=>{
@@ -11,4 +11,4 @@ const numberCast = function(array) {
   return newWords.join(' ')
 };
 
-console.log(numberCast(process.argv));
+console.log(reverse(process.argv));

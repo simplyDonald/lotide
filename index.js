@@ -10,7 +10,9 @@ const findKey = require('./findKey');
 const findKeyByValue = require('./findKeyByValue');
 const letterPositions = require('./letterPositions');
 const map = require('./map');
-const joinList = require('./joinlistcopy')
+const joinList = require('./joinlistcopy');
+const takeUntil = require('./takeUntil');
+const without = require('./without')
 
 
 module.exports = {
@@ -25,5 +27,7 @@ module.exports = {
   findKeyByValue,
   letterPositions,
   map,
-  joinList
+  joinList,
+  takeUntil,
+  without
 };
