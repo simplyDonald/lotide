@@ -1,17 +1,16 @@
-const joiner = function(words) {
+const joinList = function(arrays) {
+  
   let freshWord = [];
-  for (let word of words) {
+  for (let word of arrays) {
     freshWord.push(word);
   }
-  return freshWord;
+  return freshWord.join(', ');
 };
 
-const joinList = function(arrays) {
-  return joiner(arrays).join(', ');
-};
+// const conceptList = ["gists", "types", "operators", "iteration", "problem solving"];
+// const concepts = joinList(conceptList);
+// console.log(concepts);
 
-// Test / Driver Code below...
-const conceptList = ["gists", "types", "operators", "iteration", "problem solving"];
-const concepts = joinList(conceptList);
-console.log(`Today I learned about ${concepts}.`);
+module.exports = joinList;
+
 
